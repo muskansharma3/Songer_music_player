@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Songer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="static/images/logo.png" type="image/png">
+
+</head>
+<body>
+    <!-- Background -->
+    <div class="container-fluid w-100 vh-100 bg-dark d-flex align-items-center justify-content-center flex-wrap">
+
+        <!-- Music Box -->
+        <div class="music_player h-auto text-center border border-2 rounded-4">
+            
+            <!-- nav bar -->
+            <nav class="d-flex justify-content-between mb-4">
+                <!--  Back button  -->
+                <div class="circle rounded-5">
+                    <i class="bi bi-chevron-left fs-4"></i>
+                </div>
+
+                <!-- Menu button  -->
+                <div class="circle rounded-5">
+                    <i class="bi bi-list fs-4"></i>
+                </div>
+
+            </nav>
+
+            <div>
+            
+                <!-- title and artist -->
+                <h2 id="song-title" title="Title">obsessed</h2>
+                <h3 id="artist" title="Artist">riar saab</h3>
+
+                <!-- song image and audio -->
+                <div class="img_container m-auto mb-4">
+                    <img class="border border-4 border-light-subtle" src="static/images/obsessed.jpg" alt="Cover" title="Cover">
+                </div>
+
+                <audio src="static/audio/obsessed.mp3" id="song"></audio>
+                
+                <!-- Progess bar and durations -->
+
+                <div class="progressbar_container" id="progress_container">
+                    <div class="progress_duration_meter d-flex justify-content-between fs-5 mb-1">
+                        <div id="current_time">0:00</div>
+                        <div id="duration" title="Duration">3:10</div>
+                    </div>
+
+                    <!-- Progress bar -->
+                    <input type="range" value="0" id="progress" title="Slider">
+                </div>
+                
+                <!-- Controls : Previous  Play/Pause  Next-->
+                <div class="controls d-flex justify-content-around align-items-center mx-2 fs-3">
+                    <div title="Previous" id="prev"><i class="bi bi-rewind-fill"></i></div>
+                    <div title="Play"><i class="bi bi-play-fill" id="ctrlIcon"></i></div>
+                    <div title="Next" id="next"><i class="bi bi-fast-forward-fill"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Google font : Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 80%;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Music Box Style */
+.music_player {
+    background: #bad3fc;
+    width: 400px;
+    padding: 25px 35px;
+}
+
+/* nav style */
+
+nav .circle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #f6f6f7;
+    color: #0241ca;
+    box-shadow: 0 5px 10px rgba(26, 79, 255, 0.22);
+}
+
+/* Song-title style */
+#song-title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #ffffff;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0.3rem 0.5rem rgba(26, 79, 255, 0.514);
+}
+
+/* Song-artist style */
+#artist {
+    color: #00226b;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+/* image style */
+.img_container {
+    width: 20rem;
+    height: 20rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(26, 79, 255, 0.22);
+}
+
+/* progress-areas style */
+.progressbar_container {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+/* durations style */
+.progress_duration_meter div {
+    color: #00226b;
+}
+
+/* progress bar stylw */
+#progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: #569eef;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Progress thumb style */
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #318cf5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid #f6f6f7;
+    box-shadow: 0 5px 5px rgba(26, 79, 255, 0.22);
+    scroll-behavior: smooth;
+}
+
+
+/* controls style  : Previous and Next button*/
+
+.controls div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: #f6f6f7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #318cf5;
+    box-shadow: 0 10px 20px rgba(26, 79, 255, 0.22);
+    cursor: pointer;
+}
+
+.controls div:hover {
+    color: #f6f6f7;
+    background: #318cf5ac;
+}
+
+/* Play/Pause button style */
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: #318cf5;
+    color: white;
+}
+
+.controls div:nth-child(2):hover {
+    background-color: white;
+    color: #318cf5;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(26, 79, 255, 0.393);
+}
+
+/* image rotation styling */
+.anime {
+    animation: rotatePlayer 4s linear infinite;
+}
+
+@keyframes rotatePlayer {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
