@@ -102,7 +102,7 @@ img {
     border-radius: 50%;
     border: 5px solid #f6f6f7;
     box-shadow: 0 5px 5px rgba(26, 79, 255, 0.22);
-    scroll-behavior: smooth;
+    scroll-behavior: smooth scroll;
 }
 
 
