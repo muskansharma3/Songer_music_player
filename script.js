@@ -129,7 +129,7 @@ progress.onchange = function () {
     img.classList.add("anime");
 };
 
-playSong();
+pauseSong();
 
 // next song : Loop
 song.addEventListener("ended", nextSong);
